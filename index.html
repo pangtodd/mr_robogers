@@ -15,11 +15,11 @@
         <h3>Input:</h3>
           <form id="formOne">
             <div class="form-group">
-              <label for="userName">Wait a momement. Where are my manners? What is your name?</label>
-              <input id="userNumber" class="form-control" type="text">
+              <label for="userName">Wait a momement. Where are my manners? What is your name?<br><br><b>Enter your name here</b></label>
+              <input id="userName" class="form-control" type="text">
             </div>
             <div class="form-group">
-              <p>Please enter a whole number. I will translate it into robospeak in a way humans can understand.</p>
+              <p><br>Please enter a whole number. I will translate it into robospeak in a way humans can understand.<br></p>
               <label for="userNumber">enter number here</label>
               <input id="userNumber" class="form-control" type="text">
             </div>
@@ -30,7 +30,13 @@
         <img src="img/HAL.png" alt="HAL from 2001:A Space Odyssey">
       </div>
       <div class="col-4">
-        <h3>Output:</h3>
+        <div id="output">
+          <h3>Output:</h3>
+        <p>Good job completeing your task, <span class="name"></span>. Perhaps there is hope for humans, after all.</p>
+        <h4>results</h4>
+        <p><span class="results"></span></p>
+        </div>
       </div>
-    </div>
+    </div>    
+  </div>
 </body>

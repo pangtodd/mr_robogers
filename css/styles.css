@@ -18,6 +18,10 @@ body{
   color: black;
 }
 
+#output{
+  display: none;
+}
+
 img{
   width: 70%;
   height: auto;
