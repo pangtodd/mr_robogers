@@ -29,13 +29,23 @@ Mr. Roboson's Neighborhood
 
 #### Describe: mrRoboto()
 
-- Test: "It will take the input of a number and produce a sequence of numbers from zero up to and including the inputted number"
+- Test: "It will take the input of a number and produce a sequence of numbers from zero up to and including the inputted number."
 - Code: 
 number = "3";
 mrRoboto(number);
 - Expected Output: 0, 1, 2, 3
 ---
+- Test: "It can identify a specific number within the array."
+- code:
+Array: [0, 1, 2, 3]
+mrRoboto()
+- Expected output: 1
 
+- Test: "It can identify two specific numbers within the array."
+- code:
+Array: [0, 1, 2, 3]
+mrRoboto()
+- expected output: 1, 2
 
 ## Known Bugs
 
