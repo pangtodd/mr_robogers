@@ -1,10 +1,10 @@
 function mrRoboto(num){
   numberArray=[];
   updatedArray=[];
+  
   for (let i = 0; i <= num; i += 1) {
     numberArray.push(i)
   }
-  console.log("initial array: "+numberArray);
 
   numberArray.forEach(function(j){
     if(j.toString().includes("3")){
@@ -17,5 +17,4 @@ function mrRoboto(num){
       updatedArray.push(j)
     }
   })
-  console.log("updated array: "+updatedArray);
 };

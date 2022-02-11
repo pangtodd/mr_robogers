@@ -40,18 +40,18 @@ mrRoboto(number);
 Array: [0, 1, 2, 3]
 mrRoboto()
 - Expected output: 1
-
+---
 - Test: "It can identify two specific numbers within the array."
 - code:
 Array: [0, 1, 2, 3]
 mrRoboto()
 - expected output: 1, 2
-
+---
 - Test: "It can identify a number, regardless of which digit/position it is located"
 - code:
 Array: [0, 1, 11]
 - expected output: 1, 11
-
+---
 - Test: "It can generate an array in sequence/order, and replace any numbner that contains 1, 2, or 3, with a string.
 -code:
 Array: [0, 1, 2, 3, through 13]
