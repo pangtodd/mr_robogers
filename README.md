@@ -29,7 +29,7 @@ Mr. Roboson's Neighborhood
 
 #### Describe: mrRoboto()
 
-- Test: "It will take the input of a number and produce a sequence of numbers from zero up to and including the inputted number."
+- Test: "It will take the input of a number and produce a sequence of numbers (array) from zero up to and including the inputted number."
 - Code: 
 number = "3";
 mrRoboto(number);
@@ -46,6 +46,16 @@ mrRoboto()
 Array: [0, 1, 2, 3]
 mrRoboto()
 - expected output: 1, 2
+
+- Test: "It can identify a number, regardless of which digit/position it is located"
+- code:
+Array: [0, 1, 11]
+- expected output: 1, 11
+
+- Test: "It can generate an array in sequence/order, and replace any numbner that contains 1, 2, or 3, with a string.
+-code:
+Array: [0, 1, 2, 3, through 13]
+-expected output: "0, Beep!, Boop!, Won't you be my neighbor, 4, 5, 6, 7, 8, 9, 10, Beep! Boop! Won't you be my neighbor"
 
 ## Known Bugs
 

@@ -4,14 +4,18 @@ function mrRoboto(num){
   for (let i = 0; i <= num; i += 1) {
     numberArray.push(i)
   }
-  console.log(numberArray);
+  console.log("initial array: "+numberArray);
 
   numberArray.forEach(function(j){
-    if(j===1){
-      updatedArray.push("Beep")
+    if(j.toString().includes("3")){
+      updatedArray.push("Won't you be my neighbor?")
+    }else if(j.toString().includes("2")) {
+      updatedArray.push("Boop!")
+    }else if(j.toString().includes("1")) {
+      updatedArray.push("Beep!")      
     }else{
-      updatedArray.push(j)      
+      updatedArray.push(j)
     }
   })
-  console.log(updatedArray);
+  console.log("updated array: "+updatedArray);
 };
