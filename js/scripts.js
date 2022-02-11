@@ -1,10 +1,15 @@
+$(document).ready(function() {
+  $("form#formOne").submit(function(event) {
+    event.preventDeafult()
+  });
+
 function mrRoboto(num){
   numberArray=[];
   updatedArray=[];
-  
+
   for (let i = 0; i <= num; i += 1) {
     numberArray.push(i)
-  }
+  };
 
   numberArray.forEach(function(j){
     if(j.toString().includes("3")){
