@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US"></html>
+<html lang="en-US">
 <head>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -10,9 +10,10 @@
 <body>
   <div class="container">
     <h1>Shall we play a game?</h1>
-    <div class = row>
+    <div class=row>
       <div class="col-4">
         <h3>Input:</h3>
+        <div id="input">
           <form id="formOne">
             <div class="form-group">
               <label for="userName">Wait a momement. Where are my manners? What is your name?<br><br><b>Enter your name here</b></label>
@@ -20,23 +21,37 @@
             </div>
             <div class="form-group">
               <p><br>Please enter a whole number. I will translate it into robospeak in a way humans can understand.<br></p>
-              <label for="userNumber">enter number here</label>
+              <label for="userNumber"><b>Enter number here</b></label>
               <input id="userNumber" class="form-control" type="text">
             </div>
             <button type="submit" class="btn">submit</button>
           </form>
+          <p>Or perhaps you would like to see the results backwards? Child's play for a computer.</p>
+          <form id="reverse">
+            <button type="reverse" class="btn"><b>submit- REVERSE output</b></button>
+          </form>
+        </div>
       </div>
       <div class="col-4">
         <img src="img/HAL.png" alt="HAL from 2001:A Space Odyssey">
+        <form class="refresh">
+          <p>click here to reset at anytime.</p>
+          <button type="submit" class="btn">Try again/reset form</button>
+        </form>
       </div>
       <div class="col-4">
         <div id="output">
           <h3>Output:</h3>
-        <p>Good job completeing your task, <span class="name"></span>. Perhaps there is hope for humans, after all.</p>
-        <h4>results</h4>
-        <p><span class="results"></span></p>
+          <p>Good job completeing your task, <span class="name"></span>. Perhaps there is hope for humans, after all.<br><br>To help your organic brain comprehend the results, I have put one response per line.<br></p>
+          <form class="refresh">
+            <p>If you would like to try again, click here.</p>
+            <button type="submit" class="btn">Try again/reset form</button>
+          </form>
+          <h3>Results:</h3>
+          <p><span class="results"></span></p>
         </div>
       </div>
-    </div>    
+    </div>
   </div>
 </body>
+</html>
