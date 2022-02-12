@@ -10,10 +10,6 @@ $(document).ready(function() {
     $(".results").append(updatedArray.join(",<br>"));
   });
 
-  $("form.refresh").submit(function() {
-    location.reload(true);
-  });
-
   $("form#reverse").submit(function(event) {
     event.preventDefault();
     $("#output").show();
@@ -22,10 +18,15 @@ $(document).ready(function() {
     const userNum= parseInt($("input#userNumber").val());
     mrRoboto(userNum, name);
     const reversedArray=updatedArray.reverse();
-    console.log(reversedArray);
     $(".name").append(name);
     $(".results").append(reversedArray.join(",<br>"));
   });
+
+  $("form.refresh").submit(function() {
+    location.reload(true);
+  });
+
+// Business logic below
 
   function mrRoboto(num, name){
     numberArray=[];
