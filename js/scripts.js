@@ -22,15 +22,15 @@ $(document).ready(function() {
     $(".results").append(reversedArray.join(",<br>"));
   });
 
-  $("form.refresh").submit(function() {
+  $("button.refresh").click(function() {
     location.reload(true);
   });
 
 // Business logic below
 
   function mrRoboto(num, name){
-    numberArray=[];
-    updatedArray=[];
+    let numberArray=[];
+    let updatedArray=[];
     for (let i = 0; i <= num; i += 1) {
       numberArray.push(i)
     };

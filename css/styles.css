@@ -15,7 +15,7 @@ body{
   font-family:monospace;
 }
 
-.btn{
+.btn, .refresh{
   background-color: green;
   color: black;
   text-align: center;
