@@ -35,11 +35,12 @@ $(document).ready(function() {
       numberArray.push(i)
     };
     numberArray.forEach(function(j){
-      if(j.toString().includes("3")){
+      let indexString = j.toString();
+      if(indexString.includes("3")){
         updatedArray.push('"Won\'t you be my neighbor,'+name+'?"');
-      }else if(j.toString().includes("2")) {
+      }else if(indexString.includes("2")) {
         updatedArray.push('"Boop!"');
-      }else if(j.toString().includes("1")) {
+      }else if(indexString.includes("1")) {
         updatedArray.push('"Beep!"');     
       }else{
         updatedArray.push(j);
